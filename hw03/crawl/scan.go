@@ -46,8 +46,8 @@ func ScanHeaders(headers http.Header, result chan []string) {
 	defer close(result)
 }
 func ScanHtml(body string, result chan []string) {
+	defer close(result)
 	if body == "" {
-		result <- nil
 		log.Println("Body was empty")
 		return
 	}
@@ -69,24 +69,24 @@ func ScanHtml(body string, result chan []string) {
 	}
 
 	result <- r
-
-	defer close(result)
 }
 func ScanPhoneNumbers(body string, result chan []string) {
+	defer close(result)
+
 	values := scanPhoneNumberRegExpr.FindStringSubmatch(body)
 
 	result <- values
-
-	defer close(result)
 }
 func ScanEmails(body string, result chan []string) {
+	defer close(result)
+
 	values := scanEmailRegExpr.FindStringSubmatch(body)
 
 	result <- values
-
-	defer close(result)
 }
 func ScanCookies(cookies []*http.Cookie, result chan []string) {
+	defer close(result)
+
 	var r []string
 
 	scannerData := utils.GetScannerData()
@@ -115,6 +115,31 @@ func ScanCookies(cookies []*http.Cookie, result chan []string) {
 	}
 
 	result <- r
-
+}
+func ScanCerts(resp *http.Response, result chan []string) {
 	defer close(result)
+	if resp.TLS == nil || resp.TLS.PeerCertificates == nil {
+		return
+	}
+
+	certs := resp.TLS.PeerCertificates
+
+	var r []string
+
+	scannerData := utils.GetScannerData()
+
+	for k, t := range scannerData.Technologies {
+		for _, tcert := range certs {
+			for _, name := range tcert.Issuer.Names {
+				if name.Value == t.CertIssuer {
+					r = append(r, k)
+					if len(t.Implies) > 0 {
+						r = append(r, t.Implies...)
+					}
+				}
+			}
+		}
+	}
+
+	result <- r
 }

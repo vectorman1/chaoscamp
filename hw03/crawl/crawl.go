@@ -1,6 +1,7 @@
 package crawl
 
 import (
+	"crypto/tls"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -8,6 +9,7 @@ import (
 	"net/http"
 	"net/url"
 	"sync"
+	"time"
 )
 
 type Crawler struct {
@@ -23,28 +25,29 @@ type Fetcher interface {
 	Fetch(url string) (body string, urls []string, err error)
 }
 
-func (c *Crawler) crawl(url string) []string {
+func (c *Crawler) crawl(client *http.Client, url string) []string {
 	log.Println(url)
 
-	r, err := http.Get(url)
+	req, _ := http.NewRequest(http.MethodGet, url, nil)
+	req.Header.Set("User-Agent", "golang_crawler/1.0")
+	resp, err := client.Do(req)
 	if err != nil {
 		return nil
 	}
-	if r.StatusCode != http.StatusOK {
-		_ = r.Body.Close()
+	if resp.StatusCode != http.StatusOK {
 		return nil
 	}
+	defer resp.Body.Close()
 
-	links, err := FetchLinks(r)
+	links, err := FetchLinks(resp)
 	if err != nil {
 		return nil
 	}
-	if r.StatusCode != http.StatusOK {
-		_ = r.Body.Close()
+	if resp.StatusCode != http.StatusOK {
 		return nil
 	}
 
-	bodyBytes, err := ioutil.ReadAll(r.Body)
+	bodyBytes, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		return links
 	}
@@ -55,28 +58,39 @@ func (c *Crawler) crawl(url string) []string {
 	headerTechnologies := make(chan []string)
 	htmlTechnologies := make(chan []string)
 	cookiesTechnologies := make(chan []string)
+	certTechnologies := make(chan []string)
 
 	go ScanEmails(body, emails)
 	go ScanPhoneNumbers(body, phoneNumbers)
 	go ScanHtml(body, htmlTechnologies)
-	go ScanHeaders(r.Header, headerTechnologies)
-	go ScanCookies(r.Cookies(), cookiesTechnologies)
+	go ScanHeaders(resp.Header, headerTechnologies)
+	go ScanCookies(resp.Cookies(), cookiesTechnologies)
+	go ScanCerts(resp, certTechnologies)
 
-	go SaveResults(r, emails, phoneNumbers, headerTechnologies, htmlTechnologies, cookiesTechnologies)
+	go SaveResults(resp, emails, phoneNumbers, headerTechnologies, htmlTechnologies, cookiesTechnologies, certTechnologies)
 
 	return links
 }
 
-func SaveResults(r *http.Response, emails chan []string, phoneNumbers chan []string, headerTechnologies chan []string, htmlTechnologies chan []string, cookieTechnologies chan []string) {
+func SaveResults(
+	r *http.Response,
+	emails chan []string,
+	phoneNumbers chan []string,
+	headerTechnologies chan []string,
+	htmlTechnologies chan []string,
+	cookieTechnologies chan []string,
+	certTechnologies chan []string) {
 	emailsResult := <-emails
 	phoneNumbersResult := <-phoneNumbers
 	headerTechnologiesResult := <-headerTechnologies
 	htmlTechnologiesResult := <-htmlTechnologies
 	cookieTechnologiesResult := <-cookieTechnologies
-	mergedTechnologies := append(headerTechnologiesResult, append(htmlTechnologiesResult, cookieTechnologiesResult...)...)
+	certTechnologiesResult := <-certTechnologies
+
+	mergedTechnologies := append(headerTechnologiesResult, append(append(htmlTechnologiesResult, cookieTechnologiesResult...), certTechnologiesResult...)...)
 	uniqueTechnologies := unique(mergedTechnologies)
 
-	fmt.Println(emailsResult, phoneNumbersResult, uniqueTechnologies)
+	fmt.Println(r.Request.Host, emailsResult, phoneNumbersResult, uniqueTechnologies)
 }
 
 func unique(slice []string) []string {
@@ -92,12 +106,27 @@ func unique(slice []string) []string {
 }
 
 func (c *Crawler) Run(recurse *bool, maxLegs *int) {
+	transport := http.Transport{
+		TLSClientConfig: &tls.Config{
+			InsecureSkipVerify: true,
+		},
+		IdleConnTimeout: 5 * time.Second,
+	}
+	client := http.Client{
+		Timeout:   5 * time.Second,
+		Transport: &transport,
+	}
+
 	go func() { c.WorkList <- c.Sites }()
 
 	for i := 0; i < *maxLegs; i++ {
 		go func() {
 			for link := range c.UnvisitedLinks {
-				foundLinks := c.crawl(link)
+				foundLinks := c.crawl(&client, link)
+
+				if foundLinks == nil {
+					fmt.Println("No links found on page.")
+				}
 
 				if *recurse {
 					go func() {

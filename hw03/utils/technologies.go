@@ -20,5 +20,6 @@ type Technology struct {
 	Scripts     []string          `json:"scripts,omitempty"` //problematic - replace for import "scripts":\s"(.+)" with "scripts": [ "\1" ]
 	Cookies     map[string]string `json:"cookies,omitempty"`
 	Website     string            `json:"website,omitempty"`
+	CertIssuer  string            `json:"certIssuer,omitempty"`
 	// TODO: Add remaining fields
 }
