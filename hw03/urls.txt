@@ -1,0 +1,3 @@
+http://moodle.mnknowledge.com/course/view.php?id=82
+https://www.golangprograms.com/url-parser-in-golang.html
+https://stackoverflow.com/questions/50095616/go-string-interpolation
