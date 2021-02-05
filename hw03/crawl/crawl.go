@@ -1,111 +1,40 @@
 package crawl
 
 import (
+	"chaoscamp/hw03/utils"
 	"crypto/tls"
 	"fmt"
-	"io"
-	"io/ioutil"
 	"log"
 	"net/http"
-	"net/url"
-	"sync"
 	"time"
 )
 
 type Crawler struct {
-	mux            sync.Mutex
 	Sites          []string
-	Out            io.Writer
 	WorkList       chan []string
 	UnvisitedLinks chan string
 	VisitedLinks   map[string]bool
+	Fingerprints   []Fingerprint
+	Depth          int
 }
 
-type Fetcher interface {
-	Fetch(url string) (body string, urls []string, err error)
-}
-
-func (c *Crawler) crawl(client *http.Client, url string) []string {
+func (c *Crawler) crawl(client *http.Client, url string) (*http.Response, error) {
 	log.Println(url)
-
 	req, _ := http.NewRequest(http.MethodGet, url, nil)
 	req.Header.Set("User-Agent", "golang_crawler/1.0")
 	resp, err := client.Do(req)
+
 	if err != nil {
-		return nil
+		return nil, err
 	}
 	if resp.StatusCode != http.StatusOK {
-		return nil
-	}
-	defer resp.Body.Close()
-
-	links, err := FetchLinks(resp)
-	if err != nil {
-		return nil
-	}
-	if resp.StatusCode != http.StatusOK {
-		return nil
+		return nil, fmt.Errorf("website responded with %d", resp.StatusCode)
 	}
 
-	bodyBytes, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return links
-	}
-
-	body := string(bodyBytes)
-	emails := make(chan []string)
-	phoneNumbers := make(chan []string)
-	headerTechnologies := make(chan []string)
-	htmlTechnologies := make(chan []string)
-	cookiesTechnologies := make(chan []string)
-	certTechnologies := make(chan []string)
-
-	go ScanEmails(body, emails)
-	go ScanPhoneNumbers(body, phoneNumbers)
-	go ScanHtml(body, htmlTechnologies)
-	go ScanHeaders(resp.Header, headerTechnologies)
-	go ScanCookies(resp.Cookies(), cookiesTechnologies)
-	go ScanCerts(resp, certTechnologies)
-
-	go SaveResults(resp, emails, phoneNumbers, headerTechnologies, htmlTechnologies, cookiesTechnologies, certTechnologies)
-
-	return links
+	return resp, nil
 }
 
-func SaveResults(
-	r *http.Response,
-	emails chan []string,
-	phoneNumbers chan []string,
-	headerTechnologies chan []string,
-	htmlTechnologies chan []string,
-	cookieTechnologies chan []string,
-	certTechnologies chan []string) {
-	emailsResult := <-emails
-	phoneNumbersResult := <-phoneNumbers
-	headerTechnologiesResult := <-headerTechnologies
-	htmlTechnologiesResult := <-htmlTechnologies
-	cookieTechnologiesResult := <-cookieTechnologies
-	certTechnologiesResult := <-certTechnologies
-
-	mergedTechnologies := append(headerTechnologiesResult, append(append(htmlTechnologiesResult, cookieTechnologiesResult...), certTechnologiesResult...)...)
-	uniqueTechnologies := unique(mergedTechnologies)
-
-	fmt.Println(r.Request.Host, emailsResult, phoneNumbersResult, uniqueTechnologies)
-}
-
-func unique(slice []string) []string {
-	keys := make(map[string]bool)
-	var list []string
-	for _, entry := range slice {
-		if _, value := keys[entry]; !value {
-			keys[entry] = true
-			list = append(list, entry)
-		}
-	}
-	return list
-}
-
-func (c *Crawler) Run(recurse *bool, maxLegs *int) {
+func (c *Crawler) Run(recurse *bool, maxLegs *int, s *utils.ScannerData) {
 	transport := http.Transport{
 		TLSClientConfig: &tls.Config{
 			InsecureSkipVerify: true,
@@ -118,19 +47,29 @@ func (c *Crawler) Run(recurse *bool, maxLegs *int) {
 	}
 
 	go func() { c.WorkList <- c.Sites }()
-
+	var result []Fingerprint
+	totalFingerprints := 0
 	for i := 0; i < *maxLegs; i++ {
 		go func() {
 			for link := range c.UnvisitedLinks {
-				foundLinks := c.crawl(&client, link)
-
-				if foundLinks == nil {
-					fmt.Println("No links found on page.")
+				totalFingerprints++
+				fingerprint, err := NewFingerprint(&client, link, s, c)
+				if err != nil {
+					log.Println("Error generating fingerprint for ", link, err)
+					totalFingerprints--
+					continue
 				}
+				links, err := fingerprint.UnseenUniqueLinks(c.VisitedLinks)
+				if err != nil {
+					log.Println(err)
+					totalFingerprints--
+					continue
+				}
+				result = append(result, *fingerprint)
 
 				if *recurse {
 					go func() {
-						c.WorkList <- foundLinks
+						c.WorkList <- links
 					}()
 				}
 			}
@@ -138,16 +77,24 @@ func (c *Crawler) Run(recurse *bool, maxLegs *int) {
 	}
 
 	for list := range c.WorkList {
-		for _, link := range list {
-			pLink, err := url.Parse(link)
-			if err != nil {
-				fmt.Errorf("Error parsing url found %s", link)
-				continue
+		if c.Depth == 0 {
+			log.Println("waiting for", totalFingerprints-len(result), "fingerprints to finish generating")
+			for {
+				if len(result) == totalFingerprints {
+					break
+				}
 			}
-			if !c.VisitedLinks[pLink.Hostname()] {
-				c.VisitedLinks[pLink.Hostname()] = true
+			fmt.Println("Reached max depth")
+			break
+		}
+		for _, link := range list {
+			if !c.VisitedLinks[link] {
+				c.VisitedLinks[link] = true
 				c.UnvisitedLinks <- link
 			}
 		}
+		c.Depth--
 	}
+
+	utils.SaveToDiskAsJson(result)
 }

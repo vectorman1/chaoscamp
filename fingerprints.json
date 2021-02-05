@@ -1,0 +1,2276 @@
+[
+	{
+		"URL": "https://gobyexample.com",
+		"ExternalLinks": [
+			"https://golang.org",
+			"https://markmcgranaghan.com",
+			"https://github.com"
+		],
+		"Technologies": {
+			"AWS Certificate Manager": {
+				"Name": "AWS Certificate Manager",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "AWS Certificate Manager is a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources.",
+					"icon": "aws.svg",
+					"implies": [
+						"Amazon Web Services"
+					],
+					"website": "https://aws.amazon.com/certificate-manager/",
+					"certIssuer": "Amazon"
+				}
+			},
+			"Amazon Cloudfront": {
+				"Name": "Amazon Cloudfront",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "CDN",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						31
+					],
+					"description": "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds.",
+					"headers": {
+						"Via": "\\(CloudFront\\)$",
+						"X-Amz-Cf-Id": ""
+					},
+					"icon": "Amazon-Cloudfront.svg",
+					"implies": [
+						"Amazon Web Services"
+					],
+					"website": "http://aws.amazon.com/cloudfront/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.4369368+02:00"
+	},
+	{
+		"URL": "https://markmcgranaghan.com",
+		"ExternalLinks": [
+			"https://museapp.com",
+			"https://inkandswitch.com",
+			"https://stripe.com",
+			"https://www.heroku.com",
+			"https://gobyexample.com"
+		],
+		"Technologies": {
+			"AWS Certificate Manager": {
+				"Name": "AWS Certificate Manager",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "AWS Certificate Manager is a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources.",
+					"icon": "aws.svg",
+					"implies": [
+						"Amazon Web Services"
+					],
+					"website": "https://aws.amazon.com/certificate-manager/",
+					"certIssuer": "Amazon"
+				}
+			},
+			"Amazon Cloudfront": {
+				"Name": "Amazon Cloudfront",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "CDN",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						31
+					],
+					"description": "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds.",
+					"headers": {
+						"Via": "\\(CloudFront\\)$",
+						"X-Amz-Cf-Id": ""
+					},
+					"icon": "Amazon-Cloudfront.svg",
+					"implies": [
+						"Amazon Web Services"
+					],
+					"website": "http://aws.amazon.com/cloudfront/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.5039365+02:00"
+	},
+	{
+		"URL": "https://gobyexample.com",
+		"ExternalLinks": [
+			"https://golang.org",
+			"https://markmcgranaghan.com",
+			"https://github.com"
+		],
+		"Technologies": {
+			"AWS Certificate Manager": {
+				"Name": "AWS Certificate Manager",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "AWS Certificate Manager is a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources.",
+					"icon": "aws.svg",
+					"implies": [
+						"Amazon Web Services"
+					],
+					"website": "https://aws.amazon.com/certificate-manager/",
+					"certIssuer": "Amazon"
+				}
+			},
+			"Amazon Cloudfront": {
+				"Name": "Amazon Cloudfront",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "CDN",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						31
+					],
+					"description": "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds.",
+					"headers": {
+						"Via": "\\(CloudFront\\)$",
+						"X-Amz-Cf-Id": ""
+					},
+					"icon": "Amazon-Cloudfront.svg",
+					"implies": [
+						"Amazon Web Services"
+					],
+					"website": "http://aws.amazon.com/cloudfront/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.5349374+02:00"
+	},
+	{
+		"URL": "https://golang.org",
+		"ExternalLinks": [
+			"https://support.eji.org",
+			"https://play.golang.org",
+			"https://tour.golang.org",
+			"https://blog.golang.org",
+			"https://www.google.com",
+			"https://golang.org",
+			"https://google.com"
+		],
+		"Technologies": {
+			"Google Cloud": {
+				"Name": "Google Cloud",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "CDN",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						31
+					],
+					"description": "Google Cloud is a suite of cloud computing services.",
+					"headers": {
+						"Via": "^1\\.1 google$"
+					},
+					"icon": "google_cloud.svg",
+					"website": "https://cloud.google.com"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.6489381+02:00"
+	},
+	{
+		"URL": "https://museapp.com",
+		"ExternalLinks": [
+			"https://twitter.com",
+			"https://museapp.com"
+		],
+		"Technologies": {
+			"Let's Encrypt": {
+				"Name": "Let's Encrypt",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "Let's Encrypt is a free, automated, and open certificate authority.",
+					"icon": "Lets Encrypt.svg",
+					"website": "https://letsencrypt.org/",
+					"certIssuer": "Let's Encrypt"
+				}
+			},
+			"Netlify": {
+				"Name": "Netlify",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					},
+					{
+						"name": "CDN",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62,
+						31
+					],
+					"description": "Netlify providers hosting and server-less backend services for web applications and static websites.",
+					"headers": {
+						"Server": "^Netlify",
+						"X-NF-Request-ID": ""
+					},
+					"icon": "Netlify.svg",
+					"website": "https://www.netlify.com/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.6499374+02:00"
+	},
+	{
+		"URL": "https://github.com",
+		"ExternalLinks": [
+			"https://docs.github.com",
+			"https://github.com",
+			"https://lab.github.com",
+			"https://opensource.guide",
+			"https://education.github.com",
+			"https://stars.github.com",
+			"https://enterprise.github.com",
+			"https://www.npmjs.com",
+			"https://apps.apple.com",
+			"https://play.google.com",
+			"https://desktop.github.com",
+			"https://cli.github.com",
+			"https://resources.github.com",
+			"https://partner.github.com",
+			"https://atom.io",
+			"https://www.electronjs.org",
+			"https://services.github.com",
+			"https://www.githubstatus.com",
+			"https://github.blog",
+			"https://socialimpact.github.com",
+			"https://shop.github.com",
+			"https://twitter.com",
+			"https://www.facebook.com",
+			"https://www.youtube.com",
+			"https://www.linkedin.com"
+		],
+		"Technologies": {
+			"GitHub Pages": {
+				"Name": "GitHub Pages",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "GitHub Pages is a static site hosting service.",
+					"headers": {
+						"Server": "^GitHub\\.com$",
+						"X-GitHub-Request-Id": ""
+					},
+					"icon": "GitHub.svg",
+					"implies": [
+						"Ruby on Rails"
+					],
+					"website": "https://pages.github.com/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.6769374+02:00"
+	},
+	{
+		"URL": "https://www.npmjs.com",
+		"ExternalLinks": [
+			"https://docs.npmjs.com",
+			"https://www.npmjs.com",
+			"https://status.npmjs.org",
+			"https://blog.npmjs.org"
+		],
+		"Technologies": {
+			"Cloudflare": {
+				"Name": "Cloudflare",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "CDN",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						31
+					],
+					"description": "Cloudflare is a web-infrastructure and website-security company, providing content-delivery-network services, DDoS mitigation, Internet security, and distributed domain-name-server services.",
+					"headers": {
+						"Server": "^cloudflare$",
+						"cf-cache-status": "",
+						"cf-ray": ""
+					},
+					"icon": "CloudFlare.svg",
+					"cookies": {
+						"__cfduid": ""
+					},
+					"website": "http://www.cloudflare.com"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.7566153+02:00"
+	},
+	{
+		"URL": "https://www.google.com",
+		"ExternalLinks": [
+			"https://www.google.bg",
+			"https://maps.google.bg",
+			"https://www.youtube.com",
+			"https://news.google.com",
+			"https://mail.google.com",
+			"https://drive.google.com",
+			"https://calendar.google.com",
+			"https://accounts.google.com",
+			"https://www.google.com"
+		],
+		"Technologies": {
+			"Google Web Server": {
+				"Name": "Google Web Server",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						22
+					],
+					"headers": {
+						"Server": "gws"
+					},
+					"icon": "Google.svg",
+					"website": "http://en.wikipedia.org/wiki/Google_Web_Server"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.7986218+02:00"
+	},
+	{
+		"URL": "https://opensource.guide",
+		"ExternalLinks": [
+			"https://github.com",
+			"https://opensourcefriday.com"
+		],
+		"Technologies": {
+			"GitHub Pages": {
+				"Name": "GitHub Pages",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "GitHub Pages is a static site hosting service.",
+					"headers": {
+						"Server": "^GitHub\\.com$",
+						"X-GitHub-Request-Id": ""
+					},
+					"icon": "GitHub.svg",
+					"implies": [
+						"Ruby on Rails"
+					],
+					"website": "https://pages.github.com/"
+				}
+			},
+			"Let's Encrypt": {
+				"Name": "Let's Encrypt",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "Let's Encrypt is a free, automated, and open certificate authority.",
+					"icon": "Lets Encrypt.svg",
+					"website": "https://letsencrypt.org/",
+					"certIssuer": "Let's Encrypt"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.7966215+02:00"
+	},
+	{
+		"URL": "https://socialimpact.github.com",
+		"ExternalLinks": [
+			"https://chayn.co",
+			"https://github.com",
+			"https://hikaya.io",
+			"https://merltech.org",
+			"https://explore.ovio.org",
+			"https://www.codetenderloin.org",
+			"https://mavenyouth.org",
+			"https://support.github.com"
+		],
+		"Technologies": {
+			"GitHub Pages": {
+				"Name": "GitHub Pages",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "GitHub Pages is a static site hosting service.",
+					"headers": {
+						"Server": "^GitHub\\.com$",
+						"X-GitHub-Request-Id": ""
+					},
+					"icon": "GitHub.svg",
+					"implies": [
+						"Ruby on Rails"
+					],
+					"website": "https://pages.github.com/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.7966215+02:00"
+	},
+	{
+		"URL": "https://cli.github.com",
+		"ExternalLinks": [
+			"https://github.blog",
+			"https://github.com",
+			"https://resources.github.com",
+			"https://developer.github.com",
+			"https://partner.github.com",
+			"https://atom.io",
+			"https://electron.atom.io",
+			"https://desktop.github.com",
+			"https://help.github.com",
+			"https://services.github.com",
+			"https://lab.github.com",
+			"https://githubstatus.com",
+			"https://shop.github.com",
+			"https://twitter.com",
+			"https://www.facebook.com",
+			"https://www.youtube.com",
+			"https://www.linkedin.com"
+		],
+		"Technologies": {
+			"GitHub Pages": {
+				"Name": "GitHub Pages",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "GitHub Pages is a static site hosting service.",
+					"headers": {
+						"Server": "^GitHub\\.com$",
+						"X-GitHub-Request-Id": ""
+					},
+					"icon": "GitHub.svg",
+					"implies": [
+						"Ruby on Rails"
+					],
+					"website": "https://pages.github.com/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.7986218+02:00"
+	},
+	{
+		"URL": "https://resources.github.com",
+		"ExternalLinks": [
+			"https://github.com",
+			"https://lab.github.com",
+			"https://opensource.guide",
+			"https://education.github.com",
+			"https://enterprise.github.com",
+			"https://help.github.com",
+			"https://resources.github.com",
+			"https://docs.github.com",
+			"https://partner.github.com",
+			"https://atom.io",
+			"https://www.electronjs.org",
+			"https://desktop.github.com",
+			"https://services.github.com",
+			"https://www.githubstatus.com",
+			"https://support.github.com",
+			"https://github.blog",
+			"https://socialimpact.github.com",
+			"https://shop.github.com",
+			"https://twitter.com",
+			"https://www.facebook.com",
+			"https://www.youtube.com",
+			"https://www.linkedin.com"
+		],
+		"Technologies": {
+			"GitHub Pages": {
+				"Name": "GitHub Pages",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "GitHub Pages is a static site hosting service.",
+					"headers": {
+						"Server": "^GitHub\\.com$",
+						"X-GitHub-Request-Id": ""
+					},
+					"icon": "GitHub.svg",
+					"implies": [
+						"Ruby on Rails"
+					],
+					"website": "https://pages.github.com/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.8416211+02:00"
+	},
+	{
+		"URL": "https://services.github.com",
+		"ExternalLinks": [
+			"https://github.com",
+			"https://lab.github.com",
+			"https://opensource.guide",
+			"https://education.github.com",
+			"https://enterprise.github.com",
+			"https://resources.github.com",
+			"https://developer.github.com",
+			"https://partner.github.com",
+			"https://atom.io",
+			"https://www.electronjs.org",
+			"https://desktop.github.com",
+			"https://docs.github.com",
+			"https://services.github.com",
+			"https://www.githubstatus.com",
+			"https://github.blog",
+			"https://shop.github.com",
+			"https://twitter.com",
+			"https://www.facebook.com",
+			"https://www.youtube.com",
+			"https://www.linkedin.com",
+			"https://help.github.com"
+		],
+		"Technologies": {
+			"GitHub Pages": {
+				"Name": "GitHub Pages",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "GitHub Pages is a static site hosting service.",
+					"headers": {
+						"Server": "^GitHub\\.com$",
+						"X-GitHub-Request-Id": ""
+					},
+					"icon": "GitHub.svg",
+					"implies": [
+						"Ruby on Rails"
+					],
+					"website": "https://pages.github.com/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.8246206+02:00"
+	},
+	{
+		"URL": "https://partner.github.com",
+		"ExternalLinks": [
+			"https://github.com",
+			"https://lab.github.com",
+			"https://opensource.guide",
+			"https://education.github.com",
+			"https://enterprise.github.com",
+			"https://resources.github.com",
+			"https://developer.github.com",
+			"https://partner.github.com",
+			"https://atom.io",
+			"https://electronjs.org",
+			"https://desktop.github.com",
+			"https://help.github.com",
+			"https://services.github.com",
+			"https://www.githubstatus.com",
+			"https://github.blog",
+			"https://shop.github.com",
+			"https://twitter.com",
+			"https://www.facebook.com",
+			"https://www.youtube.com",
+			"https://www.linkedin.com"
+		],
+		"Technologies": {
+			"GitHub Pages": {
+				"Name": "GitHub Pages",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "GitHub Pages is a static site hosting service.",
+					"headers": {
+						"Server": "^GitHub\\.com$",
+						"X-GitHub-Request-Id": ""
+					},
+					"icon": "GitHub.svg",
+					"implies": [
+						"Ruby on Rails"
+					],
+					"website": "https://pages.github.com/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.8106209+02:00"
+	},
+	{
+		"URL": "https://google.com",
+		"ExternalLinks": [
+			"https://www.google.bg",
+			"https://maps.google.bg",
+			"https://www.youtube.com",
+			"https://news.google.com",
+			"https://mail.google.com",
+			"https://drive.google.com",
+			"https://calendar.google.com",
+			"https://accounts.google.com",
+			"https://www.google.com"
+		],
+		"Technologies": {
+			"Google Web Server": {
+				"Name": "Google Web Server",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						22
+					],
+					"headers": {
+						"Server": "gws"
+					},
+					"icon": "Google.svg",
+					"website": "http://en.wikipedia.org/wiki/Google_Web_Server"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.8796215+02:00"
+	},
+	{
+		"URL": "https://www.facebook.com",
+		"ExternalLinks": [
+			"https://www.facebook.com",
+			"https://tr-tr.facebook.com",
+			"https://ru-ru.facebook.com",
+			"https://de-de.facebook.com",
+			"https://ar-ar.facebook.com",
+			"https://el-gr.facebook.com",
+			"https://it-it.facebook.com",
+			"https://es-es.facebook.com",
+			"https://pt-br.facebook.com",
+			"https://fr-fr.facebook.com",
+			"https://messenger.com",
+			"https://pay.facebook.com",
+			"https://www.oculus.com",
+			"https://portal.facebook.com",
+			"https://l.facebook.com",
+			"https://developers.facebook.com"
+		],
+		"Technologies": {},
+		"DateCreated": "2021-02-05T12:35:33.8806203+02:00"
+	},
+	{
+		"URL": "https://desktop.github.com",
+		"ExternalLinks": [
+			"https://help.github.com",
+			"https://central.github.com",
+			"https://github.com"
+		],
+		"Technologies": {
+			"GitHub Pages": {
+				"Name": "GitHub Pages",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "GitHub Pages is a static site hosting service.",
+					"headers": {
+						"Server": "^GitHub\\.com$",
+						"X-GitHub-Request-Id": ""
+					},
+					"icon": "GitHub.svg",
+					"implies": [
+						"Ruby on Rails"
+					],
+					"website": "https://pages.github.com/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.8946219+02:00"
+	},
+	{
+		"URL": "https://github.blog",
+		"ExternalLinks": [
+			"https://github.com",
+			"https://github.blog",
+			"https://resources.github.com",
+			"https://developer.github.com",
+			"https://partner.github.com",
+			"https://atom.io",
+			"https://www.electronjs.org",
+			"https://desktop.github.com",
+			"https://help.github.com",
+			"https://services.github.com",
+			"https://www.githubstatus.com",
+			"https://support.github.com",
+			"https://shop.github.com",
+			"https://twitter.com",
+			"https://www.facebook.com",
+			"https://www.youtube.com",
+			"https://www.linkedin.com",
+			"https://docs.github.com"
+		],
+		"Technologies": {
+			"Automattic": {
+				"Name": "Automattic",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "Automattic is a freemium blogging service and an open-source blogging software.",
+					"headers": {
+						"X-Hacker": "(?:automattic\\.com/jobs|wpvip\\.com/careers)"
+					},
+					"icon": "automattic.png",
+					"implies": [
+						"WordPress"
+					],
+					"website": "https://automattic.com/"
+				}
+			},
+			"Let's Encrypt": {
+				"Name": "Let's Encrypt",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "Let's Encrypt is a free, automated, and open certificate authority.",
+					"icon": "Lets Encrypt.svg",
+					"website": "https://letsencrypt.org/",
+					"certIssuer": "Let's Encrypt"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.9166213+02:00"
+	},
+	{
+		"URL": "https://docs.npmjs.com",
+		"ExternalLinks": [
+			"https://npmjs.com",
+			"https://status.npmjs.com"
+		],
+		"Technologies": {
+			"GitHub Pages": {
+				"Name": "GitHub Pages",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "GitHub Pages is a static site hosting service.",
+					"headers": {
+						"Server": "^GitHub\\.com$",
+						"X-GitHub-Request-Id": ""
+					},
+					"icon": "GitHub.svg",
+					"implies": [
+						"Ruby on Rails"
+					],
+					"website": "https://pages.github.com/"
+				}
+			},
+			"Let's Encrypt": {
+				"Name": "Let's Encrypt",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "Let's Encrypt is a free, automated, and open certificate authority.",
+					"icon": "Lets Encrypt.svg",
+					"website": "https://letsencrypt.org/",
+					"certIssuer": "Let's Encrypt"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.9266233+02:00"
+	},
+	{
+		"URL": "https://stars.github.com",
+		"ExternalLinks": [
+			"https://help.github.com",
+			"https://github.com"
+		],
+		"Technologies": {
+			"GitHub Pages": {
+				"Name": "GitHub Pages",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "GitHub Pages is a static site hosting service.",
+					"headers": {
+						"Server": "^GitHub\\.com$",
+						"X-GitHub-Request-Id": ""
+					},
+					"icon": "GitHub.svg",
+					"implies": [
+						"Ruby on Rails"
+					],
+					"website": "https://pages.github.com/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:33.9346216+02:00"
+	},
+	{
+		"URL": "https://blog.golang.org",
+		"ExternalLinks": [
+			"https://support.eji.org",
+			"https://golang.org",
+			"https://play.golang.org",
+			"https://tour.golang.org",
+			"https://groups.google.com",
+			"https://twitter.com",
+			"https://github.com",
+			"https://microsoft.github.io",
+			"https://www.youtube.com",
+			"https://blog.golang.org",
+			"https://people.engr.ncsu.edu",
+			"https://pkg.go.dev",
+			"https://docs.microsoft.com",
+			"https://go2goplay.golang.org",
+			"https://opensource.googleblog.com",
+			"https://godoc.org",
+			"https://go.googlesource.com",
+			"https://gophers.slack.com",
+			"https://www.google.com",
+			"https://google.com"
+		],
+		"Technologies": {
+			"Google App Engine": {
+				"Name": "Google App Engine",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						22
+					],
+					"headers": {
+						"Server": "Google Frontend"
+					},
+					"icon": "Google App Engine.svg",
+					"website": "http://code.google.com/appengine"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.0406206+02:00"
+	},
+	{
+		"URL": "https://www.google.bg",
+		"ExternalLinks": [
+			"https://www.google.bg",
+			"https://maps.google.bg",
+			"https://www.youtube.com",
+			"https://news.google.com",
+			"https://mail.google.com",
+			"https://drive.google.com",
+			"https://calendar.google.com",
+			"https://accounts.google.com"
+		],
+		"Technologies": {
+			"Google Web Server": {
+				"Name": "Google Web Server",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						22
+					],
+					"headers": {
+						"Server": "gws"
+					},
+					"icon": "Google.svg",
+					"website": "http://en.wikipedia.org/wiki/Google_Web_Server"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.0326217+02:00"
+	},
+	{
+		"URL": "https://inkandswitch.com",
+		"ExternalLinks": [
+			"https://twitter.com"
+		],
+		"Technologies": {
+			"Cloudflare": {
+				"Name": "Cloudflare",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "CDN",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						31
+					],
+					"description": "Cloudflare is a web-infrastructure and website-security company, providing content-delivery-network services, DDoS mitigation, Internet security, and distributed domain-name-server services.",
+					"headers": {
+						"Server": "^cloudflare$",
+						"cf-cache-status": "",
+						"cf-ray": ""
+					},
+					"icon": "CloudFlare.svg",
+					"cookies": {
+						"__cfduid": ""
+					},
+					"website": "http://www.cloudflare.com"
+				}
+			},
+			"Express": {
+				"Name": "Express",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web frameworks",
+						"priority": 7
+					},
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						18,
+						22
+					],
+					"description": "Express is a web application framework for Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs.",
+					"headers": {
+						"X-Powered-By": "^Express$"
+					},
+					"icon": "Express.png",
+					"implies": [
+						"Node.js"
+					],
+					"website": "http://expressjs.com"
+				}
+			},
+			"Heroku": {
+				"Name": "Heroku",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "Heroku is a cloud platform as a service (PaaS) supporting several programming languages.",
+					"headers": {
+						"Via": "[\\d.-]+ vegur$"
+					},
+					"icon": "heroku.svg",
+					"implies": [
+						"Amazon Web Services"
+					],
+					"website": "https://www.heroku.com/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.023621+02:00"
+	},
+	{
+		"URL": "https://apps.apple.com",
+		"ExternalLinks": [
+			"https://support.apple.com",
+			"https://developer.apple.com",
+			"https://appleid.apple.com",
+			"https://www.icloud.com",
+			"https://apps.apple.com",
+			"https://investor.apple.com",
+			"https://locate.apple.com"
+		],
+		"Technologies": {},
+		"DateCreated": "2021-02-05T12:35:34.05662+02:00"
+	},
+	{
+		"URL": "https://support.eji.org",
+		"ExternalLinks": [
+			"https://eji.org",
+			"https://museumandmemorial.eji.org",
+			"https://shop.eji.org",
+			"https://justmercy.eji.org",
+			"https://calendar.eji.org",
+			"https://support.eji.org",
+			"https://www.facebook.com",
+			"https://twitter.com",
+			"https://www.instagram.com",
+			"https://www.youtube.com"
+		],
+		"Technologies": {
+			"Cloudflare": {
+				"Name": "Cloudflare",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "CDN",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						31
+					],
+					"description": "Cloudflare is a web-infrastructure and website-security company, providing content-delivery-network services, DDoS mitigation, Internet security, and distributed domain-name-server services.",
+					"headers": {
+						"Server": "^cloudflare$",
+						"cf-cache-status": "",
+						"cf-ray": ""
+					},
+					"icon": "CloudFlare.svg",
+					"cookies": {
+						"__cfduid": ""
+					},
+					"website": "http://www.cloudflare.com"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.0676219+02:00"
+	},
+	{
+		"URL": "https://www.linkedin.com",
+		"ExternalLinks": [
+			"https://www.linkedin.com",
+			"https://about.linkedin.com",
+			"https://press.linkedin.com",
+			"https://blog.linkedin.com",
+			"https://developer.linkedin.com",
+			"https://mobile.linkedin.com",
+			"https://business.linkedin.com",
+			"https://learning.linkedin.com",
+			"https://brand.linkedin.com"
+		],
+		"Technologies": {
+			"Java": {
+				"Name": "Java",
+				"DetectedBy": [
+					"cookies"
+				],
+				"Categories": [
+					{
+						"name": "Programming languages",
+						"priority": 5
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						27
+					],
+					"description": "Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.",
+					"icon": "Java.png",
+					"cookies": {
+						"JSESSIONID": ""
+					},
+					"website": "http://java.com"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.0736202+02:00"
+	},
+	{
+		"URL": "https://blog.npmjs.org",
+		"ExternalLinks": [
+			"https://npmjs.com",
+			"https://status.npmjs.com",
+			"https://github.blog"
+		],
+		"Technologies": {
+			"GitHub Pages": {
+				"Name": "GitHub Pages",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "GitHub Pages is a static site hosting service.",
+					"headers": {
+						"Server": "^GitHub\\.com$",
+						"X-GitHub-Request-Id": ""
+					},
+					"icon": "GitHub.svg",
+					"implies": [
+						"Ruby on Rails"
+					],
+					"website": "https://pages.github.com/"
+				}
+			},
+			"Let's Encrypt": {
+				"Name": "Let's Encrypt",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "Let's Encrypt is a free, automated, and open certificate authority.",
+					"icon": "Lets Encrypt.svg",
+					"website": "https://letsencrypt.org/",
+					"certIssuer": "Let's Encrypt"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.1436202+02:00"
+	},
+	{
+		"URL": "https://accounts.google.com",
+		"ExternalLinks": [
+			"https://accounts.google.com",
+			"https://www.google.com"
+		],
+		"Technologies": {
+			"OpenGSE": {
+				"Name": "OpenGSE",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						22
+					],
+					"description": "OpenGSE is a test suite used for testing servlet compliance. It is deployed by using WAR files that are deployed on the server engine.",
+					"headers": {
+						"Server": "GSE"
+					},
+					"icon": "Google.svg",
+					"implies": [
+						"Java"
+					],
+					"website": "http://code.google.com/p/opengse"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.1646196+02:00"
+	},
+	{
+		"URL": "https://play.golang.org",
+		"ExternalLinks": [
+			"https://golang.org",
+			"https://blog.golang.org",
+			"https://go.googlesource.com",
+			"https://gobyexample.com"
+		],
+		"Technologies": {
+			"Google Cloud": {
+				"Name": "Google Cloud",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "CDN",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						31
+					],
+					"description": "Google Cloud is a suite of cloud computing services.",
+					"headers": {
+						"Via": "^1\\.1 google$"
+					},
+					"icon": "google_cloud.svg",
+					"website": "https://cloud.google.com"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.1856221+02:00"
+	},
+	{
+		"URL": "https://www.heroku.com",
+		"ExternalLinks": [
+			"https://www.heroku.com",
+			"https://elements.heroku.com",
+			"https://devcenter.heroku.com",
+			"https://www.salesforce.com",
+			"https://www.tableau.com",
+			"https://trailhead.salesforce.com",
+			"https://appexchange.salesforce.com",
+			"https://www.mulesoft.com",
+			"https://blog.heroku.com",
+			"https://id.heroku.com",
+			"https://signup.heroku.com",
+			"https://twitter.com",
+			"https://t.co",
+			"https://help.heroku.com",
+			"https://status.heroku.com",
+			"https://feeds.feedburner.com",
+			"https://facebook.com",
+			"https://instagram.com",
+			"https://github.com",
+			"https://www.linkedin.com",
+			"https://www.youtube.com",
+			"https://jp.heroku.com"
+		],
+		"Technologies": {
+			"Let's Encrypt": {
+				"Name": "Let's Encrypt",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "Let's Encrypt is a free, automated, and open certificate authority.",
+					"icon": "Lets Encrypt.svg",
+					"website": "https://letsencrypt.org/",
+					"certIssuer": "Let's Encrypt"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.2226217+02:00"
+	},
+	{
+		"URL": "https://atom.io",
+		"ExternalLinks": [
+			"https://blog.atom.io",
+			"https://discuss.atom.io",
+			"https://help.github.com",
+			"https://github.com",
+			"https://teletype.atom.io",
+			"https://github.atom.io",
+			"https://atom.io",
+			"https://www.youtube.com",
+			"https://electronjs.org",
+			"https://twitter.com",
+			"https://atom-slack.herokuapp.com",
+			"https://github.myshopify.com",
+			"https://flight-manual.atom.io"
+		],
+		"Technologies": {
+			"Cowboy": {
+				"Name": "Cowboy",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						22
+					],
+					"headers": {
+						"Server": "^Cowboy$"
+					},
+					"icon": "Cowboy.png",
+					"website": "http://ninenines.eu"
+				}
+			},
+			"Heroku": {
+				"Name": "Heroku",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "Heroku is a cloud platform as a service (PaaS) supporting several programming languages.",
+					"headers": {
+						"Via": "[\\d.-]+ vegur$"
+					},
+					"icon": "heroku.svg",
+					"implies": [
+						"Amazon Web Services"
+					],
+					"website": "https://www.heroku.com/"
+				}
+			},
+			"RackCache": {
+				"Name": "RackCache",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Caching",
+						"priority": 7
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						23
+					],
+					"description": "RackCache is a quick drop-in component to enable HTTP caching for Rack-based applications.",
+					"headers": {
+						"X-Rack-Cache": ""
+					},
+					"icon": "RackCache.png",
+					"implies": [
+						"Ruby"
+					],
+					"website": "https://github.com/rtomayko/rack-cache"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.245621+02:00"
+	},
+	{
+		"URL": "https://shop.github.com",
+		"ExternalLinks": [
+			"https://github.myshopify.com",
+			"https://github.com",
+			"https://atom.io",
+			"https://electron.atom.io",
+			"https://desktop.github.com",
+			"https://developer.github.com",
+			"https://education.github.com",
+			"https://partner.github.com",
+			"https://community.github.com",
+			"https://shop.github.com",
+			"https://help.github.com",
+			"https://status.github.com",
+			"https://services.github.com",
+			"https://discountninja.io"
+		],
+		"Technologies": {
+			"Cloudflare": {
+				"Name": "Cloudflare",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "CDN",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						31
+					],
+					"description": "Cloudflare is a web-infrastructure and website-security company, providing content-delivery-network services, DDoS mitigation, Internet security, and distributed domain-name-server services.",
+					"headers": {
+						"Server": "^cloudflare$",
+						"cf-cache-status": "",
+						"cf-ray": ""
+					},
+					"icon": "CloudFlare.svg",
+					"cookies": {
+						"__cfduid": ""
+					},
+					"website": "http://www.cloudflare.com"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.2326213+02:00"
+	},
+	{
+		"URL": "https://drive.google.com",
+		"ExternalLinks": [
+			"https://accounts.google.com",
+			"https://www.google.com"
+		],
+		"Technologies": {
+			"OpenGSE": {
+				"Name": "OpenGSE",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						22
+					],
+					"description": "OpenGSE is a test suite used for testing servlet compliance. It is deployed by using WAR files that are deployed on the server engine.",
+					"headers": {
+						"Server": "GSE"
+					},
+					"icon": "Google.svg",
+					"implies": [
+						"Java"
+					],
+					"website": "http://code.google.com/p/opengse"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.2896208+02:00"
+	},
+	{
+		"URL": "https://www.youtube.com",
+		"ExternalLinks": [
+			"https://www.youtube.com",
+			"https://developers.google.com",
+			"https://policies.google.com"
+		],
+		"Technologies": {},
+		"DateCreated": "2021-02-05T12:35:34.2866215+02:00"
+	},
+	{
+		"URL": "https://mail.google.com",
+		"ExternalLinks": [
+			"https://accounts.google.com",
+			"https://www.google.com"
+		],
+		"Technologies": {
+			"OpenGSE": {
+				"Name": "OpenGSE",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						22
+					],
+					"description": "OpenGSE is a test suite used for testing servlet compliance. It is deployed by using WAR files that are deployed on the server engine.",
+					"headers": {
+						"Server": "GSE"
+					},
+					"icon": "Google.svg",
+					"implies": [
+						"Java"
+					],
+					"website": "http://code.google.com/p/opengse"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.3586212+02:00"
+	},
+	{
+		"URL": "https://calendar.google.com",
+		"ExternalLinks": [
+			"https://accounts.google.com",
+			"https://www.google.com"
+		],
+		"Technologies": {
+			"OpenGSE": {
+				"Name": "OpenGSE",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						22
+					],
+					"description": "OpenGSE is a test suite used for testing servlet compliance. It is deployed by using WAR files that are deployed on the server engine.",
+					"headers": {
+						"Server": "GSE"
+					},
+					"icon": "Google.svg",
+					"implies": [
+						"Java"
+					],
+					"website": "http://code.google.com/p/opengse"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.3886216+02:00"
+	},
+	{
+		"URL": "https://www.githubstatus.com",
+		"ExternalLinks": [
+			"https://help.github.com",
+			"https://github.com",
+			"https://twitter.com",
+			"https://policies.google.com",
+			"https://www.atlassian.com",
+			"https://www.githubstatus.com",
+			"https://resources.github.com",
+			"https://developer.github.com",
+			"https://partner.github.com",
+			"https://atom.io",
+			"https://electron.atom.io",
+			"https://desktop.github.com",
+			"https://services.github.com",
+			"https://status.github.com",
+			"https://blog.github.com",
+			"https://shop.github.com",
+			"https://www.facebook.com",
+			"https://www.youtube.com",
+			"https://www.linkedin.com"
+		],
+		"Technologies": {
+			"Fastly": {
+				"Name": "Fastly",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "CDN",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						31
+					],
+					"description": "Fastly is a cloud computing services provider. Fastly's cloud platform provides a content delivery network, Internet security services, load balancing, and video \u0026 streaming services.",
+					"headers": {
+						"Fastly-Debug-Digest": "",
+						"Vary": "Fastly-SSL",
+						"X-Fastly-Request-ID": "",
+						"x-fastly-origin": "",
+						"x-via-fastly:": ""
+					},
+					"icon": "Fastly.svg",
+					"website": "https://www.fastly.com"
+				}
+			},
+			"Let's Encrypt": {
+				"Name": "Let's Encrypt",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "Let's Encrypt is a free, automated, and open certificate authority.",
+					"icon": "Lets Encrypt.svg",
+					"website": "https://letsencrypt.org/",
+					"certIssuer": "Let's Encrypt"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.4176207+02:00"
+	},
+	{
+		"URL": "https://opensourcefriday.com",
+		"ExternalLinks": [
+			"https://opensource.guide",
+			"https://yourfirstpr.github.io",
+			"https://up-for-grabs.net",
+			"https://www.codetriage.com",
+			"https://github.com",
+			"https://www.debian.org"
+		],
+		"Technologies": {
+			"Cowboy": {
+				"Name": "Cowboy",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						22
+					],
+					"headers": {
+						"Server": "^Cowboy$"
+					},
+					"icon": "Cowboy.png",
+					"website": "http://ninenines.eu"
+				}
+			},
+			"Heroku": {
+				"Name": "Heroku",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "Heroku is a cloud platform as a service (PaaS) supporting several programming languages.",
+					"headers": {
+						"Via": "[\\d.-]+ vegur$"
+					},
+					"icon": "heroku.svg",
+					"implies": [
+						"Amazon Web Services"
+					],
+					"website": "https://www.heroku.com/"
+				}
+			},
+			"Let's Encrypt": {
+				"Name": "Let's Encrypt",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "Let's Encrypt is a free, automated, and open certificate authority.",
+					"icon": "Lets Encrypt.svg",
+					"website": "https://letsencrypt.org/",
+					"certIssuer": "Let's Encrypt"
+				}
+			},
+			"RackCache": {
+				"Name": "RackCache",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Caching",
+						"priority": 7
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						23
+					],
+					"description": "RackCache is a quick drop-in component to enable HTTP caching for Rack-based applications.",
+					"headers": {
+						"X-Rack-Cache": ""
+					},
+					"icon": "RackCache.png",
+					"implies": [
+						"Ruby"
+					],
+					"website": "https://github.com/rtomayko/rack-cache"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.4236206+02:00"
+	},
+	{
+		"URL": "https://www.electronjs.org",
+		"ExternalLinks": [
+			"https://github.com",
+			"https://support.eji.org",
+			"https://code.visualstudio.com",
+			"https://www.whatsapp.com",
+			"https://twitch.com",
+			"https://slack.com",
+			"https://figma.com",
+			"https://discuss.atom.io",
+			"https://twitter.com",
+			"https://openjsf.org",
+			"https://trademark-policy.openjsf.org",
+			"https://trademark-list.openjsf.org",
+			"https://terms-of-use.openjsf.org",
+			"https://privacy-policy.openjsf.org",
+			"https://bylaws.openjsf.org",
+			"https://www.linuxfoundation.org"
+		],
+		"Technologies": {
+			"Cowboy": {
+				"Name": "Cowboy",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						22
+					],
+					"headers": {
+						"Server": "^Cowboy$"
+					},
+					"icon": "Cowboy.png",
+					"website": "http://ninenines.eu"
+				}
+			},
+			"Heroku": {
+				"Name": "Heroku",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "Heroku is a cloud platform as a service (PaaS) supporting several programming languages.",
+					"headers": {
+						"Via": "[\\d.-]+ vegur$"
+					},
+					"icon": "heroku.svg",
+					"implies": [
+						"Amazon Web Services"
+					],
+					"website": "https://www.heroku.com/"
+				}
+			},
+			"Let's Encrypt": {
+				"Name": "Let's Encrypt",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "Let's Encrypt is a free, automated, and open certificate authority.",
+					"icon": "Lets Encrypt.svg",
+					"website": "https://letsencrypt.org/",
+					"certIssuer": "Let's Encrypt"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.4406205+02:00"
+	},
+	{
+		"URL": "https://education.github.com",
+		"ExternalLinks": [
+			"https://github.com",
+			"https://support.github.com",
+			"https://classroom.github.com",
+			"https://resources.github.com",
+			"https://docs.github.com",
+			"https://partner.github.com",
+			"https://atom.io",
+			"https://electronjs.org",
+			"https://desktop.github.com",
+			"https://services.github.com",
+			"https://lab.github.com",
+			"https://githubstatus.com",
+			"https://github.blog",
+			"https://socialimpact.github.com",
+			"https://shop.github.com",
+			"https://twitter.com",
+			"https://www.facebook.com",
+			"https://www.youtube.com",
+			"https://www.linkedin.com"
+		],
+		"Technologies": {},
+		"DateCreated": "2021-02-05T12:35:34.4656208+02:00"
+	},
+	{
+		"URL": "https://status.npmjs.org",
+		"ExternalLinks": [
+			"https://www.npmjs.com",
+			"https://policies.google.com",
+			"https://www.atlassian.com",
+			"https://twitter.com",
+			"https://status.npmjs.org"
+		],
+		"Technologies": {
+			"Fastly": {
+				"Name": "Fastly",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "CDN",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						31
+					],
+					"description": "Fastly is a cloud computing services provider. Fastly's cloud platform provides a content delivery network, Internet security services, load balancing, and video \u0026 streaming services.",
+					"headers": {
+						"Fastly-Debug-Digest": "",
+						"Vary": "Fastly-SSL",
+						"X-Fastly-Request-ID": "",
+						"x-fastly-origin": "",
+						"x-via-fastly:": ""
+					},
+					"icon": "Fastly.svg",
+					"website": "https://www.fastly.com"
+				}
+			},
+			"Let's Encrypt": {
+				"Name": "Let's Encrypt",
+				"DetectedBy": [
+					"ssl certificates"
+				],
+				"Categories": [
+					{
+						"name": "SSL/TLS certificate authorities",
+						"priority": 9
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						70
+					],
+					"description": "Let's Encrypt is a free, automated, and open certificate authority.",
+					"icon": "Lets Encrypt.svg",
+					"website": "https://letsencrypt.org/",
+					"certIssuer": "Let's Encrypt"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.6812612+02:00"
+	},
+	{
+		"URL": "https://enterprise.github.com",
+		"ExternalLinks": [
+			"https://github.com",
+			"https://lab.github.com",
+			"https://opensource.guide",
+			"https://education.github.com",
+			"https://stars.github.com",
+			"https://enterprise.github.com",
+			"https://resources.github.com",
+			"https://github.githubassets.com",
+			"https://services.github.com",
+			"https://docs.github.com",
+			"https://partner.github.com",
+			"https://atom.io",
+			"https://www.electronjs.org",
+			"https://desktop.github.com",
+			"https://www.githubstatus.com",
+			"https://github.blog",
+			"https://socialimpact.github.com",
+			"https://shop.github.com",
+			"https://twitter.com",
+			"https://www.facebook.com",
+			"https://www.youtube.com",
+			"https://www.linkedin.com"
+		],
+		"Technologies": {
+			"GitHub Pages": {
+				"Name": "GitHub Pages",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "PaaS",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						62
+					],
+					"description": "GitHub Pages is a static site hosting service.",
+					"headers": {
+						"Server": "^GitHub\\.com$",
+						"X-GitHub-Request-Id": ""
+					},
+					"icon": "GitHub.svg",
+					"implies": [
+						"Ruby on Rails"
+					],
+					"website": "https://pages.github.com/"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.7322581+02:00"
+	},
+	{
+		"URL": "https://docs.github.com",
+		"ExternalLinks": [
+			"https://cli.github.com",
+			"https://atom.io",
+			"https://electronjs.org",
+			"https://support.github.com",
+			"https://github.com",
+			"https://www.githubstatus.com",
+			"https://services.github.com"
+		],
+		"Technologies": {
+			"Cowboy": {
+				"Name": "Cowboy",
+				"DetectedBy": [
+					"headers"
+				],
+				"Categories": [
+					{
+						"name": "Web servers",
+						"priority": 8
+					}
+				],
+				"ImportedTechnology": {
+					"cats": [
+						22
+					],
+					"headers": {
+						"Server": "^Cowboy$"
+					},
+					"icon": "Cowboy.png",
+					"website": "http://ninenines.eu"
+				}
+			}
+		},
+		"DateCreated": "2021-02-05T12:35:34.7822606+02:00"
+	},
+	{
+		"URL": "https://news.google.com",
+		"ExternalLinks": [
+			"https://www.google.com",
+			"https://myaccount.google.com",
+			"https://maps.google.com",
+			"https://www.youtube.com",
+			"https://play.google.com",
+			"https://news.google.com",
+			"https://mail.google.com",
+			"https://meet.google.com",
+			"https://contacts.google.com",
+			"https://drive.google.com",
+			"https://calendar.google.com",
+			"https://translate.google.com",
+			"https://photos.google.com",
+			"https://duo.google.com",
+			"https://docs.google.com",
+			"https://books.google.com",
+			"https://www.blogger.com",
+			"https://hangouts.google.com",
+			"https://keep.google.com",
+			"https://jamboard.google.com",
+			"https://earth.google.com",
+			"https://artsandculture.google.com",
+			"https://ads.google.com",
+			"https://podcasts.google.com",
+			"https://stadia.google.com",
+			"https://accounts.google.com",
+			"https://itunes.apple.com",
+			"https://support.google.com",
+			"https://policies.google.com"
+		],
+		"Technologies": {},
+		"DateCreated": "2021-02-05T12:35:34.7942577+02:00"
+	},
+	{
+		"URL": "https://play.google.com",
+		"ExternalLinks": [
+			"https://www.google.bg",
+			"https://maps.google.bg",
+			"https://www.youtube.com",
+			"https://news.google.com",
+			"https://mail.google.com",
+			"https://drive.google.com",
+			"https://accounts.google.com",
+			"https://play.google.com",
+			"https://support.google.com",
+			"https://policies.google.com",
+			"https://developer.android.com",
+			"https://payments.google.com"
+		],
+		"Technologies": {},
+		"DateCreated": "2021-02-05T12:35:34.8792593+02:00"
+	},
+	{
+		"URL": "https://stripe.com",
+		"ExternalLinks": [
+			"https://stripe.com",
+			"https://dashboard.stripe.com",
+			"https://support.stripe.com",
+			"https://github.com",
+			"https://status.stripe.com"
+		],
+		"Technologies": {},
+		"DateCreated": "2021-02-05T12:35:35.237258+02:00"
+	},
+	{
+		"URL": "https://lab.github.com",
+		"ExternalLinks": [
+			"https://help.github.com",
+			"https://github.com"
+		],
+		"Technologies": {},
+		"DateCreated": "2021-02-05T12:35:35.9063304+02:00"
+	}
+]

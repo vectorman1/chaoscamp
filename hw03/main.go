@@ -10,10 +10,10 @@ import (
 
 func main() {
 	recurseFlag := flag.Bool("recurse", true, "Dig into links.")
-	maxHeadsFlag := flag.Int("max_heads", 5, "Max concurrent crawls.")
+	maxHeadsFlag := flag.Int("max_heads", 100, "Max concurrent crawls.")
 	flag.Parse()
 
-	utils.ReadTechnologies()
+	s := utils.NewScannerData()
 
 	wd, _ := os.Getwd()
 	urls, _ := utils.ReadUrls(fmt.Sprintf("%s\\hw03\\urls.txt", wd))
@@ -23,7 +23,8 @@ func main() {
 		WorkList:       make(chan []string),
 		UnvisitedLinks: make(chan string),
 		VisitedLinks:   make(map[string]bool),
+		Depth:          10,
 	}
 
-	crawler.Run(recurseFlag, maxHeadsFlag)
+	crawler.Run(recurseFlag, maxHeadsFlag, s)
 }
